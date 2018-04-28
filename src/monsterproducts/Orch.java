@@ -7,7 +7,7 @@ public class Orch extends MonsterFactory {
 	@Override
 	public void setMonsterHealth(int monsterHealth) {
 
-		super.setMonsterHealth(20);
+		super.setMonsterHealth(monsterHealth);
 	}
 
 	@Override

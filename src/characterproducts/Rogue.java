@@ -1,5 +1,7 @@
 package characterproducts;
 
-public class Rogue {
+import factories.CharacterInterface;
+
+public class Rogue implements CharacterInterface {
 
 }

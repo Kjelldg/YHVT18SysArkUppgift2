@@ -6,7 +6,7 @@ public class Berserker extends MonsterFactory {
 
 	@Override
 	public void setMonsterHealth(int monsterHealth) {
-		super.setMonsterHealth(999);
+		super.setMonsterHealth(monsterHealth);
 	}
 
 	@Override

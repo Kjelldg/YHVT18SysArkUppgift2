@@ -20,9 +20,10 @@ public class Main {
 		System.out.println("Berserker lines below:");
 		System.out.println(berserker1.battleCry());
 		System.out.println(berserker1.description());
-		// berserker1.setMonsterHealth(1000);
+		berserker1.setMonsterHealth(1000);
 		System.out.println(berserker1.getMonsterHealth());
 
+		System.out.println(orch1.getMonsterHealth());
 	}
 
 }
