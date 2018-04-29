@@ -3,6 +3,7 @@ package factories;
 public abstract class MonsterFactory {
 
 	protected int monsterHealth = 10;
+	protected int damage = 0;
 
 	public abstract String battleCry();
 
@@ -14,6 +15,14 @@ public abstract class MonsterFactory {
 
 	public void setMonsterHealth(int monsterHealth) {
 		this.monsterHealth = monsterHealth;
+	}
+
+	public int getDamage() {
+		return damage;
+	}
+
+	public void setDamage(int damage) {
+		this.damage = damage;
 	}
 
 }

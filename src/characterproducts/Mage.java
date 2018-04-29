@@ -10,8 +10,13 @@ public class Mage extends CharacterFactory {
 	}
 
 	@Override
+	public void setDamage(int damage) {
+		super.setDamage(damage);
+	}
+
+	@Override
 	public String personalMotto() {
-		return "Trust no one.";
+		return "The truth is out there.";
 
 	}
 
