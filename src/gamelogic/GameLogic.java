@@ -21,48 +21,12 @@ public class GameLogic {
 		return randomizedNumber;
 	}
 
-	// Randomizes a monster.
-	public MonsterFactory monsterRandomizer() {
-
-		int randomNumber = randomizer.nextInt(2) + 1;
-
-		if (randomNumber == 1) {
-			MonsterFactory orch1 = new Orch();
-			return orch1;
-		} else if (randomNumber == 2) {
-			MonsterFactory berserker1 = new Berserker();
-			return berserker1;
-		}
-
-		return null;
-	}
-
-	// Randomizes the player's character.
-	public CharacterFactory characterRandomizer() {
-
-		int randomNumber = randomizer.nextInt(2) + 1;
-
-		if (randomNumber == 1) {
-			CharacterFactory mage = new Mage();
-			return mage;
-		} else if (randomNumber == 2) {
-			CharacterFactory warrior = new Warrior();
-			return warrior;
-		}
-
-		return null;
-	}
-
 	// Evaluates the winner based on damage and health of monsters and the player.
 	public String evaluator(int monsterDamage, int monsterHealth, int playerDamage, int playerHealth) {
 
-		boolean loop = true;
-
 		if (monsterDamage > playerHealth) {
-			loop = false;
 			return "The monster.";
 		} else if (playerDamage > monsterHealth) {
-			loop = false;
 			return "The player.";
 		} else {
 			return "It's a tie.";
