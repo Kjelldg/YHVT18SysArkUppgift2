@@ -53,6 +53,7 @@ public class GameLogic {
 		return null;
 	}
 
+	// Evaluates the winner based on damage and health of monsters and the player.
 	public String evaluator(int monsterDamage, int monsterHealth, int playerDamage, int playerHealth) {
 
 		boolean loop = true;

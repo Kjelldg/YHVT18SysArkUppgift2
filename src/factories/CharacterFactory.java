@@ -1,5 +1,7 @@
 package factories;
 
+import gamelogic.GameLogic;
+
 public abstract class CharacterFactory {
 
 	protected int characterHealth = 10;
