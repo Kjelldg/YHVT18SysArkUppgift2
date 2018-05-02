@@ -3,7 +3,7 @@ package main;
 import characterproducts.Warrior;
 import factories.CharacterFactory;
 import factories.MonsterFactory;
-import gamelogic.*;
+import gamelogic.GameLogic;
 import monsterproducts.Berserker;
 import monsterproducts.Orch;
 
@@ -18,17 +18,17 @@ public class Main {
 
 		String winner = "";
 
-		playerCharacter = new Warrior();
 		orch = new Orch();
 		berserker = new Berserker();
+		playerCharacter = new Warrior();
 
-		playerCharacter.setDamage(gameLogic.randomizer(8));
 		orch.setDamage(gameLogic.randomizer(4));
 		berserker.setDamage(gameLogic.randomizer(7));
+		playerCharacter.setDamage(gameLogic.randomizer(8));
 
-		playerCharacter.setCharacterHealth(gameLogic.randomizer(6));
 		orch.setMonsterHealth(gameLogic.randomizer(4));
 		berserker.setMonsterHealth(gameLogic.randomizer(3));
+		playerCharacter.setCharacterHealth(gameLogic.randomizer(6));
 
 		winner = gameLogic.evaluator(orch.getDamage(), orch.getMonsterHealth(), playerCharacter.getDamage(),
 				playerCharacter.getCharacterHealth());

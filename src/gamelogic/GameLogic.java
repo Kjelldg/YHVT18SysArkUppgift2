@@ -1,13 +1,6 @@
 package gamelogic;
 
 import java.util.Random;
-import java.util.function.LongBinaryOperator;
-
-import factories.MonsterFactory;
-import monsterproducts.Berserker;
-import monsterproducts.Orch;
-import factories.CharacterFactory;
-import characterproducts.*;
 
 public class GameLogic {
 
